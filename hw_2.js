@@ -1,3 +1,4 @@
+//exercise 1-33
 let item_1;
 item_1 = 5;
 console.log(item_1);
@@ -38,3 +39,73 @@ else if(age_1 > age_3){
 else{
     console.log("Technical work");
 }
+
+//exercise 1*
+const checkAge = function(age){
+    if(age < age_2){
+        console.log("You don't have access cause your age is " + age +" It's less then");
+    }
+    else if((age >= age_2) && (age < age_3)){
+        console.log("Welcome  !");
+    }
+    else if(age >= age_3){
+        console.log("Keep calm and look Culture channel");
+    } 
+    else{
+        console.log("Technical work");
+    }
+}
+checkAge(17)
+checkAge(18)
+checkAge(61)
+
+//exercise 2*
+const checkAge_type = function(age){
+    if (typeof age === "number"){
+        if(age < age_2){
+            console.log("You don't have access cause your age is " + age +" It's less then");
+        }
+        else if((age >= age_2) && (age < age_3)){
+            console.log("Welcome !");
+        }
+        else if(age >= age_3){
+            console.log("Keep calm and look Culture channel");
+        } 
+        else{
+            console.log("Technical work");
+        }
+    }
+    else{
+        console.log("Age isn't a type of number");
+    }
+}
+checkAge_type('17')
+checkAge_type(18)
+
+//exercise 3**
+const checkAgeConvertNumber = function(age){
+    if (Number(age))
+    {
+        if(age < age_2){
+            console.log("You don't have access cause your age is " + age +" It's less then");
+        }
+        else if((age >= age_2) && (age < age_3)){
+            console.log("Welcome !");
+        }
+        else if(age >= age_3){
+            console.log("Keep calm and look Culture channel");
+        } 
+        else{
+            console.log("Technical work");
+        }
+    }
+    else{
+        console.log("Age isn't a type of number");
+    }
+}
+checkAgeConvertNumber('a13')
+checkAgeConvertNumber('17')
+checkAgeConvertNumber(18)
+
+
+
