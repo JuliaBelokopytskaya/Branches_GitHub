@@ -2,7 +2,7 @@
 let age_2 = 18;
 let age_3 = 60;
 const checkAgeBrowser = function(age){
-    if (Number(age))
+    if (Number(age) && age > 0)
     {
         if(age < age_2){
             alert(`You don't have access cause your age is ${age} It's less then`);
