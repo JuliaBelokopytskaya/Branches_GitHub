@@ -61,7 +61,7 @@ checkAge(61)
 
 //exercise 2*
 const checkAge_type = function(age){
-    if (typeof age === "number"){
+    if (typeof age === "number" && age > 0){
         if(age < age_2){
             console.log("You don't have access cause your age is " + age +" It's less then");
         }
@@ -84,7 +84,7 @@ checkAge_type(18)
 
 //exercise 3**
 const checkAgeConvertNumber = function(age){
-    if (Number(age))
+    if (Number(age) && age > 0)
     {
         if(age < age_2){
             console.log("You don't have access cause your age is " + age +" It's less then");
