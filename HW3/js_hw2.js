@@ -39,9 +39,9 @@ printSmile(str, count)
 const getWordStructure =function(word){
 	let regexp = /[AEYUIO]/gi;
 	let matches_array = word.match(regexp);
- let vowels = matches_array.length;
- let consonants = word.length - vowels;
- console.log(`Слово ${word} состоит из ${vowels} гласных и ${consonants} согласных букв`);
+ 	let vowels = matches_array.length;
+ 	let consonants = word.length - vowels;
+ 	console.log(`Слово ${word} состоит из ${vowels} гласных и ${consonants} согласных букв`);
 }
 getWordStructure('hello')
 
