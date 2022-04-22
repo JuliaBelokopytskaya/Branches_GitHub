@@ -46,12 +46,7 @@ const getWordStructure =function(word){
 getWordStructure('hello')
 
 //4**
-const functionIsPalindrom = function(word){
-	let reverseWord ='';
-	for (let i of word){
-		reverseWord = i + reverseWord;
-	}
-	let result = (word == reverseWord) ? "Palindrom" : "Not Palindrom";
-	return result;
-}
+const functionIsPalindrom function(word){
+    return word.toLowerCase() == word.toLowerCase().split('').reverse().join('')
+    }
 console.log(functionIsPalindrom('asdfdsa'))
