@@ -1,3 +1,4 @@
+//1
 let num = 1;
 const pow = 10;
 for(let i=1; i <= pow; i++){
@@ -5,6 +6,7 @@ for(let i=1; i <= pow; i++){
 }
 console.log(num)
 
+//1*
 const powNumber = function(pow){ 
 	let num =1;   
 	for(let i=1; i <= pow; i++){
@@ -14,6 +16,7 @@ const powNumber = function(pow){
 }
 console.log(powNumber(pow))
 
+//2
 let count = 5;
 let str = ':)';
 let resultStr ='';
@@ -22,6 +25,7 @@ for(let i=1; i<= count; i++){
 	console.log(resultStr);
 }
 
+//2*
 const printSmile = function(str, numberOfRow){
 	let resultStr ='';
 	for(let i=1; i<= numberOfRow; i++){
@@ -31,6 +35,7 @@ const printSmile = function(str, numberOfRow){
 }
 printSmile(str, count)
 
+//3**
 const getWordStructure =function(word){
 	let regexp = /[AEYUIO]/gi;
 	let matches_array = word.match(regexp);
@@ -40,6 +45,7 @@ const getWordStructure =function(word){
 }
 getWordStructure('hello')
 
+//4**
 const functionIsPalindrom = function(word){
 	let reverseWord ='';
 	for (let i of word){
