@@ -40,7 +40,12 @@ const getWordStructure =function(word){
 	let regexp = /[AEYUIO]/gi;
 	let matches_array = word.match(regexp);
  	let vowels = matches_array.length;
- 	let consonants = word.length - vowels;
+	if (word.indexOf('-') == -1){
+		let consonants = word.length - vowels;
+	}
+	else{
+		let consonants = word.length - vowels - 1;
+	}
  	console.log(`Слово ${word} состоит из ${vowels} гласных и ${consonants} согласных букв`);
 }
 getWordStructure('hello')
