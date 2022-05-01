@@ -353,14 +353,7 @@ const userTask2 = [{
 }
 ]
 //TASK 2
-const userUnique = function(userTask2){
-    const userSet = new Set();
-    for(let i = 0; i < userTask2.length; i++){
-        userSet.add(JSON.stringify(userTask2[i]));
-    }
-    return userSet;
-}
-
+const userUnique = (userTask2)=> return Array.from(new Set(userTask2.map(JSON.stringify))).map(JSON.parse);
 console.log(userUnique(userTask2))
 
 // //TASK 2*
