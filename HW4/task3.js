@@ -97,6 +97,7 @@ const getEnterpriseName = function(idDepartment){
 console.log(getEnterpriseName(4));
 
 const addEnterprise = function(newName){
+    //const newId = arr[arr.length - 1].departments[arr[arr.length - 1].departments.length - 1].id + 1;
     enterprises.push({id: Math.round(Math.random()*20), name:newName })
     return enterprises;
 }
