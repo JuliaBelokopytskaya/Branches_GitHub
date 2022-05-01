@@ -80,28 +80,7 @@ const users = [
     },
 ];
 
-//TASK 1 var.1
+//TASK 1
 const result =(users) => users.filter(user => user.registrationDate == "09.10.2021" || user.registrationDate == "10.10.2021")
 console.log(result)
 
-//TASK1 var.2
-const usersSearch = function(){
-    const fs = require('fs');
-    let data = fs.readFileSync('HW4/task1.txt','utf-8').split('=');
-    let indexStart = 0;
-    let indexEnd = 0;
-    let flag = false;
-    while(indexEnd != -1){
-        indexStart = data[1].indexOf('{', indexStart+1);
-        indexEnd = data[1].indexOf('}', indexEnd+1);
-        let users=data[1].slice(indexStart, indexEnd+1)
-        if (users.includes('09.10.2021') || users.includes('10.10.2021')){
-            console.log(users);
-            flag = true;
-        }
-    }
-    if (flag == false){
-        console.log("users not find");
-    }
-}
-usersSearch()
