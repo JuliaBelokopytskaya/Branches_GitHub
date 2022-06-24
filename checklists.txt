@@ -1,5 +1,8 @@
-ID:
-Summary:
-Status:
-Result:
+ID: 1.
+Title: Fields and messages are cleared on page reload.
+Precondition: The fields are filled with valid data.
+Inputs:Refresh the page.
+ER: Fields are empty, no messages.
+Status:Pass.
+
 
